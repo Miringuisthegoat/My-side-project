@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message For You</title>
+    <link rel="icon" type="image/x-icon" href="/images/sakura.png">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+            font-family:Arial, sans-serif;
+            overflow:hidden;
+        }
+
+        .stars{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background:
+                radial-gradient(white 1px, transparent 1px);
+            background-size:50px 50px;
+            opacity:0.3;
+        }
+
+        .card{
+            width:90%;
+            max-width:700px;
+            padding:50px;
+            border-radius:25px;
+            background:rgba(255,255,255,0.1);
+            backdrop-filter:blur(10px);
+            text-align:center;
+            color:white;
+            box-shadow:0 10px 30px rgba(0,0,0,0.3);
+            animation:fadeIn 2s ease;
+        }
+
+        h1{
+            font-size:3rem;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:1.3rem;
+            line-height:1.8;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:15px 35px;
+            background:#ff4d6d;
+            color:white;
+            text-decoration:none;
+            border-radius:30px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.05);
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(40px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <div class="card">
+        <h2>🌸To The Rich Girl Called Angel🌸</h2>
+        <br><br>
+
+        <p>
+            Since I can't give you actual flowers because of distance <br>
+            I made this for you.<br>
+
+            I hope you like it.<br><br>
+            p.s. I love you Angel, and this won't change!
+            <br>
+            made with love by your boyfriend, <br>
+            <span style="color:#ff4d6d; font-weight:bold;">XO,Benjamin</span>
+            <br>
+
+
+        </p>
+
+        <a href="index.html" class="btn">Back to Flowers</a>
+    </div>
+
+</body>
+</html>
